@@ -84,13 +84,13 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 import pymysql
-pymysql.version_info = (1, 4, 2, "final", 0)
+pymysql.version_info = (3,13,1, "final", 0)
 pymysql.install_as_MySQLdb()
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "django",
+        'NAME': "mysql",
         'HOST': 'localhost',
         'PORT': '3306',
         'USER': 'root',
